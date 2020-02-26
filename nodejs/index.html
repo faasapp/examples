@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="default.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+
+<form class="calculator">
+    <div class="numbers">
+        <label for="text1">A</label>
+        <input type="text" id="text1" value="2"/>
+
+        <label for="text2">B</label>
+        <input type="text" id="text2" value="4"/>
+
+    </div>
+
+    <div class="operator">
+        <label for="text3">Operator</label>
+        <input type="text" id="text3" value="0"/>
+    </div>
+
+    <div class="button">
+        <button onclick="calculate('+','text3')">+</button>
+        <button onclick="calculate('-','text3')">-</button>
+        <br/>
+        <button onclick="calculate('/','text3')">/</button>
+        <button onclick="calculate('*','text3')">X</button>
+    </div>
+
+    <input type="reset" value="Reset" onclick="clear()"/>
+
+</form>
+
+</body>
+</html>
